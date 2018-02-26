@@ -6,8 +6,8 @@
     "private": true,
     "scripts": {
         "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-        "start": "npm install -g chalk && npm run build && npm run server",
-        "server": "node server.js",
+        "deploy": "npm run build && git add --all && git commit -m 'deploy' && git push origin master",
+        "start": "node server.js",
         "lint": "eslint --ext .js,.vue src",
         "build": "node build/build.js"
     },
