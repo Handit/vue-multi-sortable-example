@@ -5,13 +5,15 @@
     "author": "lucas_amaral <lucas.amaral.dw@gmail.com>",
     "private": true,
     "scripts": {
-        "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --progress --config build/webpack.dev.conf.js",
-        "start": "npm run dev",
+        "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+        "start": "npm run build && npm run server",
+        "server": "node server.js",
         "lint": "eslint --ext .js,.vue src",
         "build": "node build/build.js"
     },
     "dependencies": {
-        "vue": "^2.5.2"
+        "vue": "^2.5.2",
+        "express": "^4.16.2"
     },
     "devDependencies": {
         "autoprefixer": "^7.1.2",

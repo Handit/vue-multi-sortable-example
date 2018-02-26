@@ -29,7 +29,7 @@
             </draggable-list>
         </section>
         <footer class="text-center">
-            <a href="https://github.com/Handit/vue-sortable" type="button" class="btn btn-light">View on Github</a>
+            <a href="https://github.com/Handit/vue-sortable" class="btn btn-light">View on Github</a>
         </footer>
     </div>
 </template>
