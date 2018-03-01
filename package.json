@@ -1,7 +1,7 @@
 {
-    "name": "vue-sortable",
+    "name": "vue-multi-sortable-example",
     "version": "1.0.0",
-    "description": "A Vue.js project",
+    "description": "A Vue.js example project using vue-multi-sortable",
     "author": "lucas_amaral <lucas.amaral.dw@gmail.com>",
     "private": true,
     "scripts": {
@@ -13,7 +13,8 @@
     },
     "dependencies": {
         "express": "^4.16.2",
-        "vue": "^2.5.2"
+        "vue": "^2.5.2",
+        "vue-multi-sortable": "^1.0.1"
     },
     "devDependencies": {
         "autoprefixer": "^7.1.2",

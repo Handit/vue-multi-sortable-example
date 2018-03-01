@@ -16,7 +16,7 @@
                 <h3> Demo </h3>
                 <p>**Press ctrl key to select multiple items**</p>
             </div>
-            <draggable-list
+            <sortable
                     :items="items" 
                     id-field="id" 
                     list-class-name="list-group mx-auto" 
@@ -26,7 +26,7 @@
                     <template slot-scope="{item}">
                         {{item.label}}
                     </template>
-            </draggable-list>
+            </sortable>
         </section>
         <footer class="text-center">
             <a href="https://github.com/Handit/vue-sortable" class="btn btn-light">View on Github</a>
@@ -35,10 +35,10 @@
 </template>
 
 <script>
-import DraggableList from "./components/draggableList.vue"
+import sortable from "vue-multi-sortable"
 
 export default {
-    components: { DraggableList },
+    components: { sortable },
     data: function () {
         return {
             items: [
